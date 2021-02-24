@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
 html,
 body,
 #root,
@@ -11,6 +17,22 @@ body,
   display: flex;
   justify-content: center;
   border-bottom: 1px solid gray;
+}
+
+#header-area {
+  width: 1024px;
+  height: 100%;
+  /* 배경 색상을 자동으로 중앙으로 바꾸는 방법 1 (margin: 0 auto */
+  /* flex는 수평방향을 맞춰준다. */
+  display: flex;
+  align-items: center;
+  /* 상단에 있던 '업로드 버튼'을 오른쪽 끝으로 이동시킴 */
+  justify-content: space-between;
+}
+
+#header-area img {
+  width: 128px;
+  height: 36px;
 }
 
 #body {
